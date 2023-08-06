@@ -80,8 +80,9 @@ const Header = ({ name }: IHeaderProps) => {
                 setShowNavigation(false);
               }}
             />
-            {navItems.map((nav) => (
+            {navItems.map((nav, index) => (
               <Link
+                key={index}
                 href={nav.href}
                 className="flex justify-start items-center gap-3 uppercase"
                 onClick={() => {
@@ -106,8 +107,9 @@ const Header = ({ name }: IHeaderProps) => {
             />
           </Link>
           <div className="flex gap-9 px-12 py-10 backdrop-blur-3xl bg-[rgba(255,255,255,0.04)]">
-            {navItems.map((nav) => (
+            {navItems.map((nav, index) => (
               <Link
+                key={index}
                 href={nav.href}
                 className={classNames("text-nav uppercase relative", {
                   "after:absolute after:-bottom-10 after:left-0 after:h-1 after:w-full after:bg-space-white":
@@ -131,8 +133,9 @@ const Header = ({ name }: IHeaderProps) => {
             />
           </Link>
           <div className="relative w-[70%] flex gap-9 px-32 py-10 backdrop-blur-3xl bg-[rgba(255,255,255,0.04)]">
-            {navItems.map((nav) => (
+            {navItems.map((nav, index) => (
               <Link
+                key={index}
                 href={nav.href}
                 className={classNames(
                   "flex justify-start items-center gap-3 uppercase relative hover:after:absolute hover:after:-bottom-10 hover:after:left-0 hover:after:h-1 hover:after:w-full hover:after:bg-space-white hover:after:opacity-50",
