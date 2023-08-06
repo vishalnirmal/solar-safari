@@ -1,20 +1,10 @@
-import Header from "@components/Header";
-import { ReactNode } from "react";
 import "@styles/globals.css";
+import { ILayoutProps } from "@index";
 
-export interface IMainLayout {
-  children: ReactNode | ReactNode[];
-}
+export interface IHomeLayoutProps extends ILayoutProps {}
 
-const MainLayout = ({ children }: IMainLayout) => {
-  return (
-    <html lang="en">
-      <body>
-        <Header />
-        <main>{children}</main>
-      </body>
-    </html>
-  );
+const HomeLayout = ({ children }: IHomeLayoutProps) => {
+  return <html lang="en">{children}</html>;
 };
 
-export default MainLayout;
+export default HomeLayout;
