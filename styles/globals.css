@@ -18,4 +18,10 @@
     color: var(--space-white);
     background-color: var(--space-black);
   }
+
+  body {
+    width: 100vw;
+    height: 100vh;
+    position: relative;
+  }
 }
