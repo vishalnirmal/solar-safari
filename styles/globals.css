@@ -1,3 +1,21 @@
+@import url("https://fonts.googleapis.com/css2?family=Bellefair&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Barlow+Condensed&family=Bellefair&display=swap");
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+:root {
+  --space-black: #0b0d17;
+  --space-blue: #d0d6f9;
+  --space-white: #ffffff;
+}
+
+@layer base {
+  html {
+    font-family: "Barlow Condensed", system-ui, sans-serif;
+    font-size: 18px;
+    color: var(--space-white);
+    background-color: var(--space-black);
+  }
+}
