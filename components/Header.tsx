@@ -124,15 +124,16 @@ const Header = ({ name }: IHeaderProps) => {
 
         {/* Desktop Header */}
         <div className="max-lg:hidden flex justify-between items-center pt-10 pl-14">
-          <Link href="/">
+          <Link href="/" className="relative">
             <Image
               src="/assets/shared/logo.svg"
               width={48}
               height={48}
               alt="Logo"
+              className="relative z-10"
             />
           </Link>
-          <div className="relative w-[70%] flex gap-9 px-32 py-10 backdrop-blur-3xl bg-[rgba(255,255,255,0.04)]">
+          <div className="relative miw-w-[58%] flex gap-9 px-32 py-10 backdrop-blur-3xl bg-[rgba(255,255,255,0.04)]">
             {navItems.map((nav, index) => (
               <Link
                 key={index}
@@ -149,7 +150,7 @@ const Header = ({ name }: IHeaderProps) => {
                 <p className="text-nav">{nav.name}</p>
               </Link>
             ))}
-            <div className="absolute w-[35%] max-w-[500px] top-[50%] right-[95%] h-[1px] bg-space-white" />
+            <div className="absolute w-[70%] max-w-[400px] top-[50%] right-[95%] h-[1px] bg-space-white" />
           </div>
         </div>
       </div>

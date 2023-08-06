@@ -15,34 +15,75 @@ module.exports = {
       },
       fontFamily: {
         bellefair: ["Bellefair", "serif"],
-        barlow: ["Barlow Condensed", "sans-serif"],
+        "barlow-condensed": ["Barlow Condensed", "sans-serif"],
+        barlow: ["Barlow", "sans-serif"],
       },
       fontSize: {
-        "heading-1": ["150px", "1em"],
-        "heading-2": ["100px", "1em"],
-        "heading-3": ["56px", "1em"],
-        "heading-4": ["32px", "1em"],
-        "heading-5": [
-          "28px",
+        h1: ["5rem", "1em"],
+        "h1-sm": ["6.25rem", "1em"],
+        "h1-lg": ["9.375rem", "1em"],
+        h2: ["3.5rem", "1em"],
+        "h2-sm": ["5rem", "1em"],
+        "h2-lg": ["6.25rem", "1em"],
+        h3: ["1.5rem", "1em"],
+        "h3-sm": ["2.5rem", "1em"],
+        "h3-lg": ["3.5rem", "1em"],
+        h4: ["1rem", "1em"],
+        "h4-sm": ["1.5rem", "1em"],
+        "h4-lg": ["2rem", "1em"],
+        h5: [
+          "1rem",
           {
-            letterSpacing: "4.75px",
+            letterSpacing: "0.168rem",
             lineHeight: "1em",
             fontWeight: "400",
           },
         ],
-        "sub-heading-1": ["28px", "1em"],
-        "sub-heading-2": [
-          "14px",
+        "h5-sm": [
+          "1.25rem",
           {
-            letterSpacing: "2.35px",
+            letterSpacing: "0.211rem",
+            lineHeight: "1em",
+            fontWeight: "400",
+          },
+        ],
+        "h5-lg": [
+          "1.75rem",
+          {
+            letterSpacing: "0.295rem",
+            lineHeight: "1em",
+            fontWeight: "400",
+          },
+        ],
+        sh1: ["1.75rem", "1em"],
+        sh2: [
+          "0.875rem",
+          {
+            letterSpacing: "0.1475rem",
             lineHeight: "1em",
             fontWeight: "400",
           },
         ],
         nav: [
-          "16px",
+          "1rem",
           {
-            letterSpacing: "2.7px",
+            letterSpacing: "0.1687rem",
+            lineHeight: "1em",
+            fontWeight: "400",
+          },
+        ],
+        "nav-sm": [
+          "0.875rem",
+          {
+            letterSpacing: "0.1475rem",
+            lineHeight: "1em",
+            fontWeight: "400",
+          },
+        ],
+        "nav-lg": [
+          "1rem",
+          {
+            letterSpacing: "0.1687rem",
             lineHeight: "1em",
             fontWeight: "400",
           },
@@ -68,9 +109,9 @@ module.exports = {
         "technology-mobile":
           "url('/assets/technology/background-technology-mobile.jpg')",
       },
-    },
-    transitionProperty: {
-      right: "right",
+      transitionProperty: {
+        right: "right",
+      },
     },
   },
   plugins: [],

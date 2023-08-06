@@ -1,5 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Bellefair&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Barlow+Condensed&family=Bellefair&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Barlow&family=Barlow+Condensed&family=Bellefair&display=swap");
 
 @tailwind base;
 @tailwind components;
@@ -13,15 +12,50 @@
 
 @layer base {
   html {
-    font-family: "Barlow Condensed", system-ui, sans-serif;
-    font-size: 18px;
+    font-family: "Barlow", system-ui, sans-serif;
     color: var(--space-white);
     background-color: var(--space-black);
+    font-size: 16px;
   }
 
   body {
     width: 100vw;
     height: 100vh;
     position: relative;
+  }
+
+  .custom_shadow {
+    transition: all ease-in-out 0.25s;
+  }
+
+  .custom_shadow:hover {
+    box-shadow: 0 0 0 80px rgba(255, 255, 255, 0.1036);
+  }
+}
+
+@layer components {
+  .heading_1 {
+    @apply text-h1 sm:text-h1-lg font-bellefair;
+  }
+  .heading_2 {
+    @apply text-h2 sm:text-h2-sm lg:text-h2-lg font-bellefair;
+  }
+  .heading_3 {
+    @apply text-h3 sm:text-h3-sm lg:text-h3-lg font-bellefair;
+  }
+  .heading_4 {
+    @apply text-h4 sm:text-h4-lg font-bellefair;
+  }
+  .heading_5 {
+    @apply text-h5 sm:text-h5-sm lg:text-h5-lg font-barlow-condensed;
+  }
+  .sub_heading_1 {
+    @apply text-sh1 sm:text-sh1-sm lg:text-sh1-lg font-bellefair;
+  }
+  .sub_heading_2 {
+    @apply text-sh2 sm:text-sh2-sm lg:text-sh2-lg font-barlow-condensed;
+  }
+  .nav-text {
+    @apply text-nav sm:text-nav-sm lg:text-nav-lg font-barlow-condensed;
   }
 }
