@@ -6,7 +6,7 @@ export interface ICrewLayoutProps extends ILayoutProps {}
 const CrewLayout = ({ children }: ICrewLayoutProps) => {
   return (
     <body className="bg-crew-mobile sm:bg-crew-tablet lg:bg-crew-desktop bg-cover">
-      <Header />
+      <Header name="Crew" />
       <section>{children}</section>
     </body>
   );

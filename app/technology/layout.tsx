@@ -6,7 +6,7 @@ export interface ITechnologyLayoutProps extends ILayoutProps {}
 const TechnologyLayout = ({ children }: ITechnologyLayoutProps) => {
   return (
     <body className="bg-technology-mobile sm:bg-technology-tablet lg:bg-technology-desktop bg-cover">
-      <Header />
+      <Header name="Technology" />
       <section>{children}</section>
     </body>
   );
