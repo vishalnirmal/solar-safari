@@ -35,27 +35,35 @@
 
 @layer components {
   .heading_1 {
-    @apply text-h1 sm:text-h1-lg font-bellefair;
+    @apply text-h1 sm:text-h1-lg font-bellefair uppercase;
   }
   .heading_2 {
-    @apply text-h2 sm:text-h2-sm lg:text-h2-lg font-bellefair;
+    @apply text-h2 sm:text-h2-sm lg:text-h2-lg font-bellefair uppercase;
   }
   .heading_3 {
-    @apply text-h3 sm:text-h3-sm lg:text-h3-lg font-bellefair;
+    @apply text-h3 sm:text-h3-sm lg:text-h3-lg font-bellefair uppercase;
   }
   .heading_4 {
-    @apply text-h4 sm:text-h4-lg font-bellefair;
+    @apply text-h4 sm:text-h4-lg font-bellefair uppercase;
   }
   .heading_5 {
-    @apply text-h5 sm:text-h5-sm lg:text-h5-lg font-barlow-condensed;
+    @apply text-h5 sm:text-h5-sm lg:text-h5-lg font-barlow-condensed uppercase;
   }
   .sub_heading_1 {
-    @apply text-sh1 sm:text-sh1-sm lg:text-sh1-lg font-bellefair;
+    @apply text-sh1 font-bellefair uppercase;
   }
   .sub_heading_2 {
-    @apply text-sh2 sm:text-sh2-sm lg:text-sh2-lg font-barlow-condensed;
+    @apply text-sh2 font-barlow-condensed uppercase;
   }
-  .nav-text {
-    @apply text-nav sm:text-nav-sm lg:text-nav-lg font-barlow-condensed;
+  .nav_text {
+    @apply text-nav sm:text-nav-sm lg:text-nav-lg font-barlow-condensed uppercase;
+  }
+
+  .nav_selected {
+    @apply after:absolute after:-bottom-3 after:left-0 after:h-[3px] after:w-full after:bg-space-white;
+  }
+
+  .nav_hover {
+    @apply hover:after:absolute hover:after:-bottom-3 hover:after:left-0 hover:after:h-[3px] hover:after:w-full hover:after:bg-space-white hover:after:opacity-50;
   }
 }
