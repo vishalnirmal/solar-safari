@@ -17,8 +17,8 @@ const Destination = ({ params }: IDestinationProps) => {
 
   return (
     <div className="my-6">
-      <p className="heading_5 text-center sm:text-left ml-10 my-6 sm:mt-10 sm:mb-16">
-        <span className="text-space-blue">01</span> PICK YOUR DESTINATION
+      <p className="heading_5 text-center sm:text-left sm:ml-10 my-6 sm:mt-10 sm:mb-16">
+        <span className="opacity-50">01</span> PICK YOUR DESTINATION
       </p>
       <div className="flex flex-col gap-8 items-center justify-start lg:flex-row lg:gap-44 lg:justify-center">
         <Image
