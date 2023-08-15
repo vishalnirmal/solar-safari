@@ -11,7 +11,6 @@ module.exports = {
         "space-black": "var(--space-black)",
         "space-blue": "var(--space-blue)",
         "space-white": "var(--space-white)",
-        nav: "#979797",
       },
       fontFamily: {
         bellefair: ["Bellefair", "serif"],

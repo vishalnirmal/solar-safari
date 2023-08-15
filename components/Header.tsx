@@ -146,8 +146,8 @@ const Header = ({ name }: IHeaderProps) => {
                   }
                 )}
               >
-                <p className="text-nav font-bold">{nav.index}</p>
-                <p className="text-nav">{nav.name}</p>
+                <p className="text_nav font-bold">{nav.index}</p>
+                <p className="text_nav">{nav.name}</p>
               </Link>
             ))}
             <div className="absolute w-[70%] max-w-[400px] top-[50%] right-[95%] h-[1px] bg-space-white" />
