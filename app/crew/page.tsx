@@ -2,7 +2,7 @@
 import Image from "next/image";
 import React, { useState } from "react";
 import data from "@utils/data.json";
-import { ICrew, IDestination } from "@index";
+import { ICrew } from "@index";
 import classNames from "classnames";
 
 const Destination = () => {
