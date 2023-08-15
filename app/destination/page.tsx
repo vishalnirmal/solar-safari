@@ -22,6 +22,7 @@ const Destination = () => {
           width={170}
           height={170}
           alt="moon"
+          loading={undefined}
         />
         <Image
           className="max-sm:hidden lg:hidden"
@@ -29,6 +30,7 @@ const Destination = () => {
           width={300}
           height={300}
           alt="moon"
+          loading={undefined}
         />
         <Image
           className="max-sm:hidden max-lg:hidden flex-1 max-w-[445px]"
@@ -37,6 +39,7 @@ const Destination = () => {
           height={445}
           alt="moon"
           objectFit="contain"
+          loading={undefined}
         />
         <div className="w-[87%] m-auto sm:w-[74.47%] flex flex-col gap-8 justify-center items-center lg:items-start lg:w-fit lg:m-0">
           <div className="flex justify-between items-center gap-6">

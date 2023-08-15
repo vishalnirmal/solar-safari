@@ -23,6 +23,7 @@ const Technology = () => {
             fill
             objectFit="cover"
             className="lg:hidden"
+            loading={undefined}
           />
           <Image
             src={selectedTechnology.images.portrait}
@@ -30,6 +31,7 @@ const Technology = () => {
             fill
             objectFit="cover"
             className="max-sm:hidden"
+            loading={undefined}
           />
         </div>
         <div className="flex flex-1 flex-col gap-6 sm:gap-11 lg:flex-row">

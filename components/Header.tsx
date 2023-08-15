@@ -45,6 +45,7 @@ const Header = ({ name }: IHeaderProps) => {
               width={40}
               height={40}
               alt="Logo"
+              loading={undefined}
             />
           </Link>
           <div
@@ -79,6 +80,7 @@ const Header = ({ name }: IHeaderProps) => {
               onClick={() => {
                 setShowNavigation(false);
               }}
+              loading={undefined}
             />
             {navItems.map((nav, index) => (
               <Link
@@ -104,6 +106,7 @@ const Header = ({ name }: IHeaderProps) => {
               width={48}
               height={48}
               alt="Logo"
+              loading={undefined}
             />
           </Link>
           <div className="flex gap-9 px-12 py-10 backdrop-blur-3xl bg-[rgba(255,255,255,0.04)]">
@@ -131,6 +134,7 @@ const Header = ({ name }: IHeaderProps) => {
               height={48}
               alt="Logo"
               className="relative z-10"
+              loading={undefined}
             />
           </Link>
           <div className="relative miw-w-[58%] flex gap-9 px-32 py-10 backdrop-blur-3xl bg-[rgba(255,255,255,0.04)]">

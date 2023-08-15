@@ -22,6 +22,7 @@ const Destination = () => {
               fill
               objectFit="contain"
               objectPosition="bottom"
+              loading={undefined}
             />
           </div>
           <hr className="w-full opacity-10 sm:hidden" />
