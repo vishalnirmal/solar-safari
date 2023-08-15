@@ -32,3 +32,12 @@ interface ICrew {
   role: string;
   bio: string;
 }
+
+interface ITechnology {
+  name: string;
+  images: {
+    portrait: string;
+    landscape: string;
+  };
+  description: string;
+}

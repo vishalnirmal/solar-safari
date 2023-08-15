@@ -5,12 +5,7 @@ import Image from "next/image";
 import data from "@utils/data.json";
 import classNames from "classnames";
 
-export type DESTINATION_TYPES = "moon" | "mars" | "europa" | "titan";
-
-export interface IDestinationProps
-  extends IDynamicPageProps<{ type: DESTINATION_TYPES[] }> {}
-
-const Destination = ({ params }: IDestinationProps) => {
+const Destination = () => {
   const [selectedDestination, setSelectedDestination] = useState<IDestination>(
     data.destinations[0]
   );
